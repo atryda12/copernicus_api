@@ -73,7 +73,7 @@ class Copernicus:
     def send_request(self, req):
         self.serial.write(req.char_value)
 
-    def getResponse(self):
+    def get_response(self):
         cc = 0
         while cc <= 0:
             cc = self.serial.read(1)
